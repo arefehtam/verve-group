@@ -27,6 +27,10 @@ the list of advertisers per country_code are more than five.
 
 2. Also, the performance of each advertiser per app_id and country_code should be calculated and then be merged with other two lists.
 
+3. All calculations here are offline but in real case it should be near online such that when a new impression comes or a new click occurred,
+the performance metrics should be recalculated for that specific advertiser, and these calculations should be stored and renewed for recent events
+forexample last 1 week because the recent behavior has more impact. It is another idea to give weight to performance calculation such that
+recent calc has more weigh than the last month 
 ## Performance formula
 Performance formula is the average revenue obtained from an advertiser per app_id or country_code:
 The average revenue per advertiser is : 
